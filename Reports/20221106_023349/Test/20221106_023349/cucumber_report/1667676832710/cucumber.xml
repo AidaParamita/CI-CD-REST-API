@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="6" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="11.478026">
+<testcase classname="Auth" name="user register with correct data" time="5.106424">
+<failure message="groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2&#13;&#10;&#9;at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)&#13;&#10;&#9;at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:7)&#13;&#10;"><![CDATA[Given I set endpoint register...............................................passed
+When I input HTTP Body......................................................passed
+And I send endpoint.........................................................failed
+Then I receive status code 200..............................................skipped
+
+StackTrace:
+groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2
+	at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)
+	at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Auth" name="user register without fill password" time="1.133626">
+<failure message="groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2&#13;&#10;&#9;at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)&#13;&#10;&#9;at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:13)&#13;&#10;"><![CDATA[Given I set endpoint register...............................................passed
+When I input HTTP Body......................................................passed
+And I send endpoint.........................................................failed
+Then I receive status code 400..............................................skipped
+
+StackTrace:
+groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2
+	at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)
+	at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Auth" name="user login with correct data" time="1.129313">
+<failure message="groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2&#13;&#10;&#9;at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)&#13;&#10;&#9;at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:18)&#13;&#10;"><![CDATA[Given I set endpoint login..................................................passed
+When I send endpoint........................................................failed
+Then I receive status code 200..............................................skipped
+
+StackTrace:
+groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2
+	at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)
+	at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="Auth" name="user login without fill password" time="1.137441">
+<failure message="groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2&#13;&#10;&#9;at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)&#13;&#10;&#9;at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:23)&#13;&#10;"><![CDATA[Given I set endpoint login..................................................passed
+When I send endpoint........................................................failed
+Then I receive status code 400..............................................skipped
+
+StackTrace:
+groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2
+	at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)
+	at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="Auth" name="user want to get user information" time="1.854713">
+<failure message="groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2&#13;&#10;&#9;at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)&#13;&#10;&#9;at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:28)&#13;&#10;"><![CDATA[Given I set endpoint get user information...................................passed
+When I send endpoint........................................................failed
+Then I receive status code 200..............................................skipped
+
+StackTrace:
+groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2
+	at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)
+	at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:28)
+]]></failure>
+</testcase>
+<testcase classname="Auth" name="user want to get user information with method post" time="1.116509">
+<failure message="groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2&#13;&#10;&#9;at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)&#13;&#10;&#9;at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:34)&#13;&#10;"><![CDATA[Given I set endpoint post user information..................................passed
+When I send endpoint........................................................failed
+Then I receive status code 400..............................................skipped
+
+StackTrace:
+groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2
+	at AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)
+	at ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:34)
+]]></failure>
+</testcase>
+</testsuite>

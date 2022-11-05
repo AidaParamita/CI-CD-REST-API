@@ -1,0 +1,352 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "user register with correct data",
+        "description": "",
+        "id": "auth;user-register-with-correct-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10103400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I set endpoint register",
+            "match": {
+              "location": "AuthSteps2.setEndpointRegis()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1402500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input HTTP Body",
+            "match": {
+              "location": "AuthSteps2.inputHttpBody()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:7)\r\n",
+              "duration": 4902766300,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I receive status code 200",
+            "match": {
+              "location": "AuthSteps2.recStatusCode200()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "user register without fill password",
+        "description": "",
+        "id": "auth;user-register-without-fill-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 853200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set endpoint register",
+            "match": {
+              "location": "AuthSteps2.setEndpointRegis()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1068900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I input HTTP Body",
+            "match": {
+              "location": "AuthSteps2.inputHttpBody()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:13)\r\n",
+              "duration": 1115347900,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I receive status code 400",
+            "match": {
+              "location": "AuthSteps2.recStatusCode400()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "user login with correct data",
+        "description": "",
+        "id": "auth;user-login-with-correct-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1428200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I set endpoint login",
+            "match": {
+              "location": "AuthSteps2.setEndpointLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:18)\r\n",
+              "duration": 1114780600,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I receive status code 200",
+            "match": {
+              "location": "AuthSteps2.recStatusCode200()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "user login without fill password",
+        "description": "",
+        "id": "auth;user-login-without-fill-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1285400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I set endpoint login",
+            "match": {
+              "location": "AuthSteps2.setEndpointLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:23)\r\n",
+              "duration": 1129159300,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I receive status code 400",
+            "match": {
+              "location": "AuthSteps2.recStatusCode400()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "user want to get user information",
+        "description": "",
+        "id": "auth;user-want-to-get-user-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 853700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I set endpoint get user information",
+            "match": {
+              "location": "AuthSteps2.setEndpointGetUserInformation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:28)\r\n",
+              "duration": 1848463200,
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I receive status code 200",
+            "match": {
+              "location": "AuthSteps2.recStatusCode200()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "user want to get user information with method post",
+        "description": "",
+        "id": "auth;user-want-to-get-user-information-with-method-post",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 839300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set endpoint post user information",
+            "match": {
+              "location": "AuthSteps2.setEndpointPostUserInformation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:34)\r\n",
+              "duration": 1104404100,
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I receive status code 400",
+            "match": {
+              "location": "AuthSteps2.recStatusCode400()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      }
+    ],
+    "name": "Auth",
+    "description": "",
+    "id": "auth",
+    "keyword": "Feature",
+    "uri": "E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature",
+    "tags": [
+      {
+        "name": "@Auth",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

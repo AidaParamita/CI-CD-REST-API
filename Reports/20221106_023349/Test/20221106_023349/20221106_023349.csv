@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test,,,,2022-11-06 02:33:52,2022-11-06 02:34:05,"12,991s",FAILED
+,,,,,,,
+Test Cases/TestAll,,,,2022-11-06 02:33:52,2022-11-06 02:34:05,"12,719s",FAILED
+"runFeatureFile(""Include/features/Auth.feature"")",,,,2022-11-06 02:33:52,2022-11-06 02:34:05,"12,360s",FAILED

@@ -1,0 +1,378 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "fce8c2dd-2a5a-46ae-81c4-9bc2ee444694",
+        "line": 4,
+        "name": "user register with correct data",
+        "description": "",
+        "id": "auth;user-register-with-correct-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10103400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I set endpoint register",
+            "match": {
+              "location": "AuthSteps2.setEndpointRegis()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "7d562897-4f8b-4b6e-ae98-615c46880a94"
+          },
+          {
+            "result": {
+              "duration": 1402500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input HTTP Body",
+            "match": {
+              "location": "AuthSteps2.inputHttpBody()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "ef060a75-5d57-4084-8906-92582a4e5d05"
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:7)\r\n",
+              "duration": 4902766300,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "5af6d7fd-b148-448e-bce3-d4397fa01b2c"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I receive status code 200",
+            "match": {
+              "location": "AuthSteps2.recStatusCode200()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "ff00a4d5-04e0-4122-8c72-518c46466301"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "f0a500c5-2644-40df-81e4-c0efc6976bb2",
+        "line": 10,
+        "name": "user register without fill password",
+        "description": "",
+        "id": "auth;user-register-without-fill-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 853200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I set endpoint register",
+            "match": {
+              "location": "AuthSteps2.setEndpointRegis()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "b0e9174d-75e1-4197-964f-23ade0f82d8f"
+          },
+          {
+            "result": {
+              "duration": 1068900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I input HTTP Body",
+            "match": {
+              "location": "AuthSteps2.inputHttpBody()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "ffd755a3-310b-4a71-8b76-214fa2bc7270"
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:13)\r\n",
+              "duration": 1115347900,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "9a4931de-a1b3-4d22-b5d3-dc64b6d13a3d"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I receive status code 400",
+            "match": {
+              "location": "AuthSteps2.recStatusCode400()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "a230d5cc-d247-4d2d-a185-7dab6872c5fb"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "19ef480b-425b-4d12-8138-0da7a291bcc7",
+        "line": 16,
+        "name": "user login with correct data",
+        "description": "",
+        "id": "auth;user-login-with-correct-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1428200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I set endpoint login",
+            "match": {
+              "location": "AuthSteps2.setEndpointLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "76815891-47a5-4e92-967f-d1130d274914"
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:18)\r\n",
+              "duration": 1114780600,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "9521b773-1d02-424c-b2e5-8b98fa861b63"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I receive status code 200",
+            "match": {
+              "location": "AuthSteps2.recStatusCode200()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "a3dfc30c-4548-4326-9a9b-596f41a67162"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "6368f1c5-2f06-44e0-acb9-7151c9451f84",
+        "line": 21,
+        "name": "user login without fill password",
+        "description": "",
+        "id": "auth;user-login-without-fill-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1285400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I set endpoint login",
+            "match": {
+              "location": "AuthSteps2.setEndpointLogin()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "65036c20-2fb9-4299-a931-2b7e3eff0e76"
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:23)\r\n",
+              "duration": 1129159300,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "7d5989ff-43e9-4158-aa34-5b5a7f7b5978"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I receive status code 400",
+            "match": {
+              "location": "AuthSteps2.recStatusCode400()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "4d38ad06-30d8-4f9b-9d20-525216e6c11f"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "c0c772db-a887-46ed-b2fe-678b3eb5c26a",
+        "line": 26,
+        "name": "user want to get user information",
+        "description": "",
+        "id": "auth;user-want-to-get-user-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 853700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I set endpoint get user information",
+            "match": {
+              "location": "AuthSteps2.setEndpointGetUserInformation()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "694590d9-410e-4703-9255-be26e9c29453"
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:28)\r\n",
+              "duration": 1848463200,
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "65aa5059-500b-441d-aeda-8751c220582c"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I receive status code 200",
+            "match": {
+              "location": "AuthSteps2.recStatusCode200()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "9a6f5766-3f9a-4f23-bdfc-da3f9ef2134a"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "ec399f53-a811-4e2d-8f57-0db82baaf1ac",
+        "line": 32,
+        "name": "user want to get user information with method post",
+        "description": "",
+        "id": "auth;user-want-to-get-user-information-with-method-post",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 839300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I set endpoint post user information",
+            "match": {
+              "location": "AuthSteps2.setEndpointPostUserInformation()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "d6d3edd7-8b1c-4313-8351-ac053ad3130b"
+          },
+          {
+            "result": {
+              "error_message": "groovy.lang.MissingPropertyException: No such property: response for class: AuthSteps2\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setGroovyObjectProperty(ScriptBytecodeAdapter.java:547)\r\n\tat AuthSteps2.sendEndpoint(AuthSteps2.groovy:77)\r\n\tat ✽.I send endpoint(E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature:34)\r\n",
+              "duration": 1104404100,
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "I send endpoint",
+            "match": {
+              "location": "AuthSteps2.sendEndpoint()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "314b55a5-f448-40d6-b7b2-8d39bcd56a05"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I receive status code 400",
+            "match": {
+              "location": "AuthSteps2.recStatusCode400()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "64359a32-0425-4e08-adc3-51ae1b166956"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Auth"
+          }
+        ]
+      }
+    ],
+    "name": "Auth",
+    "description": "",
+    "id": "auth",
+    "keyword": "Feature",
+    "uri": "E:/TUGAS/Kampus Merdeka/Clone4/QE_Aida-Paramita/31_Mini Project/praktikum/CI-CD-Rest-Api/Include/features/Auth.feature",
+    "tags": [
+      {
+        "name": "@Auth",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
